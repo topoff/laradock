@@ -1,3 +1,9 @@
+##################
+# nd special
+.volumes-data
+docker-compose.yml
+##################
+
 .idea
 /logs
 /data
@@ -5,7 +11,6 @@
 /.project
 .docker-sync
 /jenkins/jenkins_home
-.volumes-data
 
 /logstash/pipeline/*.conf
 /logstash/config/pipelines.yml
