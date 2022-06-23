@@ -20,10 +20,9 @@ has to be cloned in a separate directory in the ~/Code/platreform:
 ```#docker-compose up -d nginx mysql php-fpm redis```
 
 ## Setting up a new project
-1. #git submodule add https://github.com/topoff/laradock.git laradock-xxxxxxxxxxxxxxx
+1. #git submodule add https://github.com/topoff/laradock.git laradock-xxx
 2. copy /laradock-xxx/docker-compose.yml.project.example to docker-compose.yml (and edit necessary)
 3. copy /laradock-xxx/.env.project.example to .env (and edit necessary)
 4. copy /laradock-xxx/nginx/sites/default.conf.example to default.conf (and edit necessary)
 5. copy /laradock-xxx/mysql/docker-entrypoint-initdb.d/createdb.sql.project.example to createdb.sql (and edit necessary)
-6. add .volumes-data to .gitignore in the main project
 7. sometimes the sub-repo has to be added in PHPStrom > Settings > Version Control > Directory Mappings.
