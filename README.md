@@ -17,7 +17,7 @@ has to be cloned in a separate directory in the ~/Code/platreform:
 @see Setting up a new project
 
 ## Boot
-```# docker-compose up -d nginx mysql php-fpm redis```
+```# docker-compose up -d nginx mysql php-fpm redis```  
 ```# docker-compose exec workspace bash```
 
 ## Setting up a new project
