@@ -62,6 +62,10 @@ alias art="php artisan"
 alias artisan="php artisan"
 alias cdump="composer dump-autoload -o"
 alias composer:dump="composer dump-autoload -o"
+alias cda="composer dump-autoload -o"
+alias cu="composer update"
+alias cr='composer require'
+alias co='composer outdated --direct'
 alias db:reset="php artisan migrate:reset && php artisan migrate --seed"
 alias dusk="php artisan dusk"
 alias fresh="php artisan migrate:fresh"
@@ -87,6 +91,12 @@ alias npm-global="npm list -g --depth 0"
 alias ra="reload"
 alias reload="source ~/.aliases && echo \"$COL_GREEN ==> Aliases Reloaded... $COL_RESET \n \""
 alias run="npm run"
+
+alias nrd="npm run dev"
+alias nrw="npm run watch"
+alias nrwp="npm run watch-poll"
+alias nrh="npm run hot"
+alias nrp="npm run production"
 
 # Xvfb
 alias xvfb="Xvfb -ac :0 -screen 0 1024x768x16 &"

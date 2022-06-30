@@ -17,13 +17,23 @@ has to be cloned in a separate directory in the ~/Code/platreform:
 @see Setting up a new project
 
 ## Boot
-```#docker-compose up -d nginx mysql php-fpm redis```
+```# docker-compose up -d nginx mysql php-fpm redis```  
+```# docker-compose exec workspace bash```
 
 ## Setting up a new project
-1. #git submodule add https://github.com/topoff/laradock.git laradock-xxxxxxxxxxxxxxx
+1. #git submodule add https://github.com/topoff/laradock.git laradock-xxx
 2. copy /laradock-xxx/docker-compose.yml.project.example to docker-compose.yml (and edit necessary)
 3. copy /laradock-xxx/.env.project.example to .env (and edit necessary)
 4. copy /laradock-xxx/nginx/sites/default.conf.example to default.conf (and edit necessary)
 5. copy /laradock-xxx/mysql/docker-entrypoint-initdb.d/createdb.sql.project.example to createdb.sql (and edit necessary)
-6. add .volumes-data to .gitignore in the main project
 7. sometimes the sub-repo has to be added in PHPStrom > Settings > Version Control > Directory Mappings.
+
+### Then do the usual project stuff
+2. update .env from .env.laradock.example
+3. run in /laradock-xxx/ ```# docker-compose up -d nginx mysql php-fpm redis```
+4. run ```# docker-compose exec workspace bash``` from the laradock-xxx subfolder
+6. run ```# composer install```
+7. run ```# npm install && npm run dev```
+9. add 127.0.0.1 xxx.test to /etc/hosts + ()
+10. import data from backup|live: ```# php artisan import:livedb```
+13. For horizon run ```# php artisan horizon``` (if you have set QUEUE_CONNECTION=redis in .env)
