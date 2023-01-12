@@ -16,13 +16,22 @@
 #     mysql -u root -p < /docker-entrypoint-initdb.d/createdb.sql
 #
 
+CREATE USER IF NOT EXISTS 'forge'@'%' IDENTIFIED BY 'secret';
+
 CREATE DATABASE IF NOT EXISTS `tolog` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `tolog`.* TO 'default'@'%' ;
+GRANT ALL PRIVILEGES ON tolog.* TO 'forge'@'%';
 
 CREATE DATABASE IF NOT EXISTS `touserlog` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `touserlog`.* TO 'default'@'%' ;
+GRANT ALL PRIVILEGES ON touserlog.* TO 'forge'@'%';
+
+CREATE DATABASE IF NOT EXISTS `seo_websites` COLLATE 'utf8mb4_unicode_ci' ;
+GRANT ALL ON `seo_websites`.* TO 'default'@'%' ;
+GRANT ALL PRIVILEGES ON seo_websites.* TO 'forge'@'%';
 
 CREATE DATABASE IF NOT EXISTS `toportal_testing` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `toportal_testing`.* TO 'default'@'%' ;
+GRANT ALL PRIVILEGES ON toportal_testing.* TO 'forge'@'%';
 
 FLUSH PRIVILEGES ;
