@@ -257,7 +257,7 @@ RUN set -eux; \
     ###########################################################################
     if [ ${INSTALL_GMP} = true ]; then \
       # Install the PHP GMP extension
-      apt-get -yqq install php${LARADOCK_PHP_VERSION}-gmp; \
+      apt-get update && apt-get -yqq install php${LARADOCK_PHP_VERSION}-gmp; \
     fi; \
     ###########################################################################
     # GnuPG:
