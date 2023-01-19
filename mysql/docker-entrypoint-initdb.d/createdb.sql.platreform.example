@@ -16,6 +16,9 @@
 #     mysql -u root -p < /docker-entrypoint-initdb.d/createdb.sql
 #
 
+CREATE DATABASE IF NOT EXISTS `auth` COLLATE 'utf8mb4_unicode_ci' ;
+GRANT ALL ON `auth`.* TO 'default'@'%' ;
+
 CREATE DATABASE IF NOT EXISTS `landingpage_userlogger` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `landingpage_userlogger`.* TO 'default'@'%' ;
 
@@ -29,9 +32,6 @@ GRANT ALL ON `plzumkreis_import`.* TO 'default'@'%' ;
 CREATE DATABASE IF NOT EXISTS `swissofficials_import` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `swissofficials_import`.* TO 'default'@'%' ;
 
-CREATE DATABASE IF NOT EXISTS `location_debug` COLLATE 'utf8mb4_unicode_ci' ;
-GRANT ALL ON `location_debug`.* TO 'default'@'%' ;
-
 CREATE DATABASE IF NOT EXISTS `swissofficials_import` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `swissofficials_import`.* TO 'default'@'%' ;
 
@@ -43,13 +43,7 @@ GRANT ALL ON `search`.* TO 'default'@'%' ;
 CREATE DATABASE IF NOT EXISTS `search_debug` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `search_debug`.* TO 'default'@'%' ;
 
-CREATE DATABASE IF NOT EXISTS `search_debug` COLLATE 'utf8mb4_unicode_ci' ;
-GRANT ALL ON `search_debug`.* TO 'default'@'%' ;
-
 CREATE DATABASE IF NOT EXISTS `seo_websites` COLLATE 'utf8mb4_unicode_ci' ;
 GRANT ALL ON `seo_websites`.* TO 'default'@'%' ;
-
-CREATE DATABASE IF NOT EXISTS `landingpage_userlogger` COLLATE 'utf8mb4_unicode_ci' ;
-GRANT ALL ON `landingpage_userlogger`.* TO 'default'@'%' ;
 
 FLUSH PRIVILEGES ;
