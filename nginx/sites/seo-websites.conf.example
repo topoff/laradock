@@ -15,7 +15,7 @@ server {
     # ssl_certificate /etc/nginx/ssl/default.crt;
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
-    server_name vipany.test;
+    server_name vipany.test testing.vipany.test schweiz-umzug.test testing.schweiz-umzug.test;
     root /var/www/seo-websites/public;
     index index.php index.html index.htm;
 
