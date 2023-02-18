@@ -422,11 +422,13 @@ services:
         frontend:
           aliases:
             - my.vipany.test
+            - testing.my.vipany.test
         backend:
           aliases:
             - location.test
             - search-backend.test
             - backend.vipany.test
+            - testing.backend.vipany.test
 
 ### OpenResty Server #########################################
     openresty:
