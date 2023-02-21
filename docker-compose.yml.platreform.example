@@ -425,8 +425,8 @@ services:
             - testing.my.vipany.test
         backend:
           aliases:
-            - location.test
-            - search-backend.test
+            - location.vipany.test
+            - search.vipany.test
             - backend.vipany.test
             - testing.backend.vipany.test
 
