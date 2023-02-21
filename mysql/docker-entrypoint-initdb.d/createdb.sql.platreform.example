@@ -16,16 +16,22 @@
 #     mysql -u root -p < /docker-entrypoint-initdb.d/createdb.sql
 #
 
-CREATE DATABASE IF NOT EXISTS `auth` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `auth`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `vip_backend` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_backend`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `vip_backend_testing` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_backend_testing`.* TO 'default'@'%' ;
 
-CREATE DATABASE IF NOT EXISTS `landingpage_userlogger` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `landingpage_userlogger`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `vip_search` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_search`.* TO 'default'@'%' ;
 
-CREATE DATABASE IF NOT EXISTS `location` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `location`.* TO 'default'@'%' ;
-CREATE DATABASE IF NOT EXISTS `location_debug` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `location_debug`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `vip_landingpage` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_landingpage`.* TO 'default'@'%' ;
+
+CREATE DATABASE IF NOT EXISTS `vip_userlogger` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_userlogger`.* TO 'default'@'%' ;
+
+CREATE DATABASE IF NOT EXISTS `vip_location` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_location`.* TO 'default'@'%' ;
 
 CREATE DATABASE IF NOT EXISTS `plzumkreis_import` COLLATE 'utf8mb4_0900_as_ci' ;
 GRANT ALL ON `plzumkreis_import`.* TO 'default'@'%' ;
@@ -38,12 +44,16 @@ GRANT ALL ON `swissofficials_import`.* TO 'default'@'%' ;
 CREATE DATABASE IF NOT EXISTS `plzumkreis_import` COLLATE 'utf8mb4_0900_as_ci' ;
 GRANT ALL ON `plzumkreis_import`.* TO 'default'@'%' ;
 
-CREATE DATABASE IF NOT EXISTS `search` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `search`.* TO 'default'@'%' ;
-CREATE DATABASE IF NOT EXISTS `search_debug` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `search_debug`.* TO 'default'@'%' ;
 
-CREATE DATABASE IF NOT EXISTS `seo_websites` COLLATE 'utf8mb4_0900_as_ci' ;
-GRANT ALL ON `seo_websites`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `top_backend` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `top_backend`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `top_backend_testing` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `top_backend_testing`.* TO 'default'@'%' ;
+
+CREATE DATABASE IF NOT EXISTS `top_landingpage` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `top_landingpage`.* TO 'default'@'%' ;
+
+CREATE DATABASE IF NOT EXISTS `top_userlogger` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `top_userlogger`.* TO 'default'@'%' ;
 
 FLUSH PRIVILEGES ;
