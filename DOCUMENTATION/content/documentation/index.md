@@ -638,7 +638,7 @@ This way is suggested when you don't want to start workspace in production envir
 
 > Using Use Browsersync with Laravel Mix.
 
-1. Add the following settings to your `webpack.mix.js` file. Please refer to Browsersync [Options](https://browsersync.io/docs/options) page for more options.
+1. Add the following settings to your `webpack-copy.mix.js` file. Please refer to Browsersync [Options](https://browsersync.io/docs/options) page for more options.
 
 ```
 const mix = require('laravel-mix')
