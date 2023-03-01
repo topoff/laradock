@@ -38,3 +38,9 @@ has to be cloned in a separate directory in the ~/Code/platreform:
 9. add 127.0.0.1 xxx.test to /etc/hosts + ()
 10. import data from backup|live: ```# php artisan import:livedb```
 13. For horizon run ```# php artisan horizon``` (if you have set QUEUE_CONNECTION=redis in .env)
+
+### Problems with Laradock | Docker
+1 try ```# docker-compose down``` and ```# docker-compose up -d nginx mysql php-fpm redis```  
+2 try ```# docker-compose down --remove-orphans``` and ```# docker-compose up -d nginx mysql php-fpm redis```  
+3 try: restart docker desktop app and try point 2 again
+
