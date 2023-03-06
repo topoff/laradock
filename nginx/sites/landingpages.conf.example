@@ -16,7 +16,7 @@ server {
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
     server_name vipany.test testing.vipany.test schweiz-umzug.test testing.schweiz-umzug.test admin-seo.vipany.test seo.vipany.test;
-    root /var/www/seo-websites/public;
+    root /var/www/landingpages/public;
     index index.php index.html index.htm;
 
     location / {

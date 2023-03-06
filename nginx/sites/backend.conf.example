@@ -16,7 +16,7 @@ server {
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
     server_name backend.vipany.test testing.backend.vipany.test;
-    root /var/www/vipany-backend/public;
+    root /var/www/backend/public;
     index index.php index.html index.htm;
 
     location / {
