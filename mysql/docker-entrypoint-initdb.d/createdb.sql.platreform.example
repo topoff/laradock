@@ -27,7 +27,13 @@ GRANT ALL ON `vip_search`.* TO 'default'@'%' ;
 CREATE DATABASE IF NOT EXISTS `vip_landingpage` COLLATE 'utf8mb4_0900_as_ci' ;
 GRANT ALL ON `vip_landingpage`.* TO 'default'@'%' ;
 
+CREATE DATABASE IF NOT EXISTS `vip_landingpage_testing` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_landingpage`.* TO 'default'@'%' ;
+
 CREATE DATABASE IF NOT EXISTS `vip_userlogger` COLLATE 'utf8mb4_0900_as_ci' ;
+GRANT ALL ON `vip_userlogger`.* TO 'default'@'%' ;
+
+CREATE DATABASE IF NOT EXISTS `vip_userlogger_testing` COLLATE 'utf8mb4_0900_as_ci' ;
 GRANT ALL ON `vip_userlogger`.* TO 'default'@'%' ;
 
 CREATE DATABASE IF NOT EXISTS `vip_location` COLLATE 'utf8mb4_0900_as_ci' ;
