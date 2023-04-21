@@ -15,7 +15,7 @@ server {
     # ssl_certificate /etc/nginx/ssl/default.crt;
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
-    server_name backend.vipany.test testing.backend.vipany.test;
+    server_name backend.vipany.test testing.backend.vipany.test backend.top-offerten.test, testing.backend.top-offerten.test;
     root /var/www/backend/public;
     index index.php index.html index.htm;
 

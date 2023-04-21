@@ -15,7 +15,7 @@ server {
     # ssl_certificate /etc/nginx/ssl/default.crt;
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
-    server_name vipany.test testing.vipany.test seo.vipany.test testing.seo.vipany.ch schweiz-umzug.test testing.schweiz-umzug.test reinigungsangebote.test testing.reinigungsangebote.test top-offerten.test;
+    server_name vipany.test testing.vipany.test seo.vipany.test testing.seo.vipany.ch schweiz-umzug.test testing.schweiz-umzug.test reinigungsangebote.test testing.reinigungsangebote.test top-offerten.test umzug-offerten.test reinigung-offerten.test maler-angebote.test;
     root /var/www/landingpages/public;
     index index.php index.html index.htm;
 
