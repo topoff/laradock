@@ -424,12 +424,18 @@ services:
           aliases:
             - my.vipany.test
             - testing.my.vipany.test
+            - my.top-offerten.test
+            - testing.my.top-offerten.test
         backend:
           aliases:
             - location.vipany.test
             - search.vipany.test
             - backend.vipany.test
             - testing.backend.vipany.test
+            - location.top-offerten.test
+            - search.top-offerten.test
+            - backend.top-offerten.test
+            - testing.backend.top-offerten.test
 
 ### OpenResty Server #########################################
     openresty:

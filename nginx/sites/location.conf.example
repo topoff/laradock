@@ -15,7 +15,7 @@ server {
     # ssl_certificate /etc/nginx/ssl/default.crt;
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
-    server_name location.vipany.test;
+    server_name location.vipany.test location.top-offerten.test;
     root /var/www/location/public;
     index index.php index.html index.htm;
 
