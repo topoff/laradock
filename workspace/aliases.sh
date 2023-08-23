@@ -33,6 +33,9 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
 
+# our own alises
+alias pint="./vendor/bin/pint"
+
 # Commonly Used Aliases
 alias ..="cd .."
 alias ...="cd ../.."
