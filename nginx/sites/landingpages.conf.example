@@ -18,7 +18,7 @@ server {
     server_name vipany.test testing.vipany.test seo.vipany.test testing.seo.vipany.ch
     			schweiz-umzug.test testing.schweiz-umzug.test
     			reinigungsangebote.test testing.reinigungsangebote.test
-    			top-offerten.test umzug-offerten.test reinigung-offerten.test maler-angebote.test
+    			top-offerten.test umzug-offerten.test reinigung-offerten.test maler-angebote.test endreinigung-offerten.test wohnungsendreinigung-offerten.test wohnungsreinigung-offerten.test
     			top-offres.test demenagement-offres.test nettoyage-offres.test peintre-offres.test
     			top-quotes.test moving-quotes.test moving-offers.test cleaning-quotes.test painter-quotes.test
     			;
